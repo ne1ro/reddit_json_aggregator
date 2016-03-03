@@ -1,0 +1,15 @@
+{
+  "name": "reddit_json_aggregator",
+  "main": "index.js",
+  "version": "0.0.1",
+  "authors": [
+    "Alexey Kuznetsov <neiro.mail@gmail.com>"
+  ],
+  "description": "reddit_json_aggregator",
+  "keywords": [
+    "test"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

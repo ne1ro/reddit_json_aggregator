@@ -1,0 +1,105 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title /r/javascript
+    link(href='components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+  body
+    .container
+      h1.text-center /r/ JSON
+      hr
+
+      form#data(name='data')
+        .row.form-group
+          .col-md-4
+            label Reddit URL
+            input.form-control(type='text'
+              name='url'
+              value='http://www.reddit.com/r/javascript/.json'
+            )
+
+          .col-md-4
+            label Sort field
+            input.form-control(
+              type='text'
+              name='sort_field'
+              value='created_utc'
+            )
+            br
+            label Sort order
+            .radio
+              label
+                input#sort_1(type='radio'
+                  value='true'
+                  name='sort_order'
+                  checked)
+                span Ascending
+            .radio
+              label
+                input#sort_2(
+                  type='radio'
+                  name='sort_order'
+                  value='false')
+                span Descending
+
+          .col-md-4
+            label Output type
+            .radio
+              label
+                input#output_type1(
+                  type='radio'
+                  name='output_type'
+                  value='csv'
+                  checked
+                )
+                span CSV
+            .radio
+              label
+                input#output_type1(
+                  type='radio'
+                  name='output_type'
+                  value='sql'
+                )
+                span SQL
+            br
+            label CSV separator
+            input.form-control(
+              type='text'
+              name='csv_separator'
+              value=','
+            )
+            br
+            label SQL Table name
+            input.form-control(
+              type='text'
+              name='sql_db'
+              value='reddit'
+            )
+            br
+            label SQL Table fields (comma separated)
+            input.form-control(
+              type='text'
+              name='sql_fields'
+              value='Id,Title,Created At,Score'
+            )
+
+        br
+        .row
+          .col-md-3
+          .col-md-3
+            button.btn.btn-success.btn-block#sort_btn(type='button') Sort
+          .col-md-3
+            button.btn.btn-success.btn-block#aggr_btn(type='button') Aggregate
+          .col-md-3
+
+        .container
+          hr
+          h2.text-center Result
+            br
+            form(name='result')
+              textarea#result.form-control(placeholder='Result ...', rows='20')
+
+    script(src='components/jquery/dist/jquery.min.js')
+    script(src='components/bootstrap/dist/js/bootstrap.min.js')
+    script(src='app.js')

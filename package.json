@@ -1,0 +1,24 @@
+{
+  "name": "reddit_json_aggrregator",
+  "version": "0.0.1",
+  "description": "Sort and aggregate JSON results from Reddit",
+  "main": "index.js",
+  "scripts": {
+    "start": "./index.js"
+  },
+  "keywords": [
+    "test",
+    "tasks"
+  ],
+  "author": "Alexey Kuznetsov <neiro.mail@gmail.com>",
+  "private": true,
+  "dependencies": {
+    "underscore": "~1.5.2",
+    "express": "~3.2.5",
+    "jade": "~0.28.2",
+    "request": "~2.45.0"
+  },
+  "devDependencies": {
+    "nodemon": "~0.6.23"
+  }
+}
