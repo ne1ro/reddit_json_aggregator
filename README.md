@@ -2,6 +2,8 @@
 
 Parse, sort or aggregate JSON from reddit and transform to CSV or SQL.
 
+![Screenshot](/screenshots/screenshot.png)
+
 ## Install
 `npm install && bower install`  
 
