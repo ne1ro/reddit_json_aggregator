@@ -1,6 +1,6 @@
 # Sort or aggregate Reddit's JSON
 
-Parse, sort or aggregate JSON from reddit and transform to CSV or SQL.
+Node.js app that allows you to parse, sort or aggregate JSON from reddit and transform to CSV or SQL.
 
 ![Screenshot](/screenshots/screenshot.png)
 
@@ -8,7 +8,7 @@ Parse, sort or aggregate JSON from reddit and transform to CSV or SQL.
 `npm install && bower install`  
 
 ## Start
-`npm start` or `./index.js`  
+`npm start` or `./index.js` and watch for `localhost:3000`
 
 ### Test task
 `node ./lib/task3.js` or `./lib/task3`

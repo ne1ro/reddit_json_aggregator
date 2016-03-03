@@ -7,8 +7,9 @@
     "start": "./index.js"
   },
   "keywords": [
+    "reddit",
     "test",
-    "tasks"
+    "json"
   ],
   "author": "Alexey Kuznetsov <neiro.mail@gmail.com>",
   "private": true,
